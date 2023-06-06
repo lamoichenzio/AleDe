@@ -1,5 +1,5 @@
 <script setup>
-import {computed, ref} from 'vue'
+import {computed, ref, watch} from 'vue'
 import {reactive} from "vue";
 
 const counter = reactive({count: 0})
@@ -50,6 +50,30 @@ const filteredTodos = computed(() => {
     }
 )
 
+
+
+
+const todoId = ref(1)
+const todoData = ref(null)
+
+async function fetchData() {
+  todoData.value = null
+  const res = await fetch(
+      `https://jsonplaceholder.typicode.com/todos/${todoId.value}`
+  )
+  todoData.value = await res.json()
+}
+
+fetchData()
+
+watch(todoId, fetchData)
+
+
+const greeting = ref('Hello from parent')
+
+const childMsg = ref("No child msg yet")
+
+
 </script>
 
 <template>
@@ -86,6 +110,16 @@ const filteredTodos = computed(() => {
       <button @click="removeTodo(todo)">X</button>
     </li>
   </ul>
+
+  <p>Todo id: {{ todoId }}</p>
+  <button @click="todoId++">Fetch next todo</button>
+  <p v-if="!todoData">Loading...</p>
+  <pre v-else>{{ todoData }}</pre>
+
+  <ChildComponent :msg="greeting" />
+
+  <ChildComponent @response="(msg) => childMsg = msg" />
+  <p>{{ childMsg}}</p>
 
 </template>
 

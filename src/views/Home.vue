@@ -1,15 +1,16 @@
 <script setup>
-import {onMounted, ref} from "vue";
-
-const p = ref(null)
-
-onMounted(() => {
-  // component is now mounted.
-  p.value.textContent = "mounted"
-})
+import Content from "@/components/Content.vue";
+import Sidebar from "@/components/Sidebar.vue";
 
 </script>
 
 <template>
-  <p ref="p">Hello</p>
+
+  <Sidebar></Sidebar>
+  <Content></Content>
+
 </template>
+
+<style>
+
+</style>

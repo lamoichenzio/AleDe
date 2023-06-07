@@ -1,19 +1,20 @@
 <script setup>
+import AboutSection from "@/components/AboutSection.vue";
 import ContentSection from "@/components/ContentSection.vue";
-import ContentPrimary from "@/components/ContentPrimary.vue";
-import {ref} from "vue";
+import { ref } from "vue";
 
 const name = ref('Alessandro')
 const surname = ref("D'Errico")
 const address = ref("Via delle Nocelle 4B - L'Aquila - 67100 - AQ - Italy")
 const birthday = ref("02/02/1993")
-const phone = ref("")
-const email = ref("")
-const linkedin = ref("")
+const phone = ref(3356434967)
+const email = ref("alede.derrico@gmail.com")
+const linkedin = ref("https://it.linkedin.com/")
 const instagram = ref("")
 const github = ref("")
 const facebook = ref("")
 const twitter = ref("")
+const description = ref("Hello! I'm Alessandro, a passionate developer that love mobile and web development. With a strong background in Computer Science, I possess a good understanding of the most common technologies and frameworks used in the industry. I take great pride in crafting innovative and user-friendly solutions that seamlessly blend functionality with aesthetics. Whether it's creating intuitive mobile apps or building responsive web applications, I am dedicated to delivering high-quality results that exceed client expectations.")
 
 </script>
 
@@ -22,18 +23,20 @@ const twitter = ref("")
   <!-- Page Content-->
   <div class="container-fluid p-0">
     <!-- About-->
-    <ContentPrimary
+    <AboutSection
     :name="name"
     :surname="surname"
     :address="address"
     :birthday="birthday"
+    :phone="phone"
     :email="email"
     :facebook="facebook"
     :linkedin="linkedin"
     :github="github"
     :instagram="instagram"
     :twitter="twitter"
-    ></ContentPrimary>
+    :description="description"
+    ></AboutSection>
 
 
     <!--    SECTION EXPERIENCE-->
@@ -154,49 +157,6 @@ const twitter = ref("")
         the front-end web development world.</p>
     </ContentSection>
 
-    <!--SECTION AWARDS-->
-    <ContentSection :section-title="String('Awards & Certifications')" :section-id="String('awards')">
-      <ul class="fa-ul mb-0">
-        <li>
-          <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-          Google Analytics Certified Developer
-        </li>
-        <li>
-          <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-          Mobile Web Specialist - Google Certification
-        </li>
-        <li>
-          <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-          1
-          <sup>st</sup>
-          Place - University of Colorado Boulder - Emerging Tech Competition 2009
-        </li>
-        <li>
-          <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-          1
-          <sup>st</sup>
-          Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-        </li>
-        <li>
-          <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-          2
-          <sup>nd</sup>
-          Place - University of Colorado Boulder - Emerging Tech Competition 2008
-        </li>
-        <li>
-          <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-          1
-          <sup>st</sup>
-          Place - James Buchanan High School - Hackathon 2006
-        </li>
-        <li>
-          <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-          3
-          <sup>rd</sup>
-          Place - James Buchanan High School - Hackathon 2005
-        </li>
-      </ul>
-    </ContentSection>
 
   </div>
 

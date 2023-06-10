@@ -5,12 +5,13 @@ import Sidebar from "@/components/Sidebar.vue";
 </script>
 
 <template>
-
-  <Sidebar></Sidebar>
-  <Content></Content>
-
+  <!-- <div class="container-fluid"> -->
+  <!-- <div class="row"> -->
+      <Sidebar></Sidebar>
+      <Content></Content>
+  <!-- </div> -->
+  <!-- </div> -->
 </template>
 
 <style>
-
 </style>

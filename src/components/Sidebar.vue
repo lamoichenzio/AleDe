@@ -1,24 +1,4 @@
 <template>
-  <!-- <div class="d-sm-none d-md-block col-md-3 fixed-top p-0 sidebar" id="sideNav">
-
-    <div class="h-100 bg-dark d-flex justify-content-center align-items-baseline text-light">
-
-      <div class="row pt-5 p-0">
-        <div class="col-12">
-          <div class="profile-pic"><img v-bind:src="logo" alt=""></div>
-        </div>
-        <div class="col-12 pt-5 p-0 text-center justify-content-center">
-          <nav class="nav flex-column nav-underline" role="navigation">
-            <a class="nav-link active" aria-current="page" href="#">Active</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link disabled">Disabled</a>
-          </nav>
-        </div>
-
-      </div>
-    </div>
-  </div> -->
 
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="sideNav">
@@ -32,9 +12,9 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publication">Publications</a></li>
+                   <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li> -->
                 </ul>
             </div>
         </nav>

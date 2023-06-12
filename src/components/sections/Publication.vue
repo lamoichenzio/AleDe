@@ -2,19 +2,20 @@
     <!-- Experience-->
     <section class="resume-section" id="publication">
         <div class="resume-section-content">
-            <h2 class="mb-5">Publication</h2>
+            <h2 class="mb-5">Publications</h2>
+           
 
-            <!-- <div v-for="item in experiences">
+            <div v-for="item in publications">
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0">{{ item.job }}</h3>
-                        <div class="subheading mb-3">{{ item.company }}</div>
-                        <p>{{ item.description }}</p>
+                        <h3 class="mb-0">{{ item.title }}</h3>
+                        <div class="subheading mb-3">{{ item.place }}</div>
+                        <a class="link-primary" v-bind:href="item.link">{{ item.link }}</a>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">{{ item.period }}</span></div>
+                    <div class="flex-shrink-0"><span class="text-primary">{{ item.year }}</span></div>
                 </div>
 
-            </div> -->
+            </div>
 
         </div>
     </section>
@@ -23,34 +24,20 @@
 <script setup>
 import { ref } from 'vue';
 
-const experiences = ref([])
+const publications = ref([])
 
-experiences.value.push({
-    job: "Software developer",
-    company: "Maggioli SPA - L'Aquila, Italy",
-    description: "Development of Angular and Java applications",
-    period: "01/09/2021 - CURRENT"
+publications.value.push({
+    title: "The CrazySquare solution: a gamified ICT tool to support the musical learning in pre-adolescents",
+    place: "AVI2020",
+    link: "https://dl.acm.org/doi/abs/10.1145/3399715.3399943",
+    year: "2020"
 })
 
-experiences.value.push({
-    job: "Lecturer",
-    company: "BiTE s.r.l. - L'Aquila, Italy",
-    description: "Corporate training in Academy for Web Development: Web Front End in Angular JS, JSP and JavaServlet Web Back-End.\nDesign of mobile applications on the Android platform",
-    period: "2021"
-})
-
-experiences.value.push({
-    job: "Web Developer",
-    company: "BiTE s.r.l. - L'Aquila, Italy",
-    description: "Web design and development for the Abruzzo ICT hub",
-    period: "2021 - CURRENT"
-})
-
-experiences.value.push({
-    job: "Research scholarship",
-    company: "University of L'Aquila - L'Aquila, Italy",
-    description: "Research scholarship in 'Strumenti EDA (Electronic Design Automation) for Networked Embedded Systems'.\nDevelopment of mobile applications for Android platform, Java and Kotlin languages.\nWeb development in PHP and Smarty.",
-    period: "2018 – 2021"
+publications.value.push({
+    title: "The CrazySquare Project: A Technological Pedagogical Content Knowledge Solution",
+    place: "Proceedings of the 12th International Conference on Computer Supported Education - Volume 1: CSME",
+    link: "https://www.scitepress.org/PublicationsDetail.aspx?ID=JvXfECpoKmI=&t=1",
+    year: "2020"
 })
 
 

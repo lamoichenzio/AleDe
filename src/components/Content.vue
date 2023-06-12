@@ -1,9 +1,8 @@
 <script setup>
-import { ref } from "vue";
 import About from "./sections/About.vue";
 import Education from "./sections/Education.vue";
 import Experience from "./sections/Experience.vue";
-
+import Publication  from "./sections/Publication.vue";
 </script>
 
 <template>
@@ -15,6 +14,8 @@ import Experience from "./sections/Experience.vue";
         <Experience></Experience>
 
         <Education></Education>
+        
+        <Publication></Publication>
         
         <!-- Skills-->
         <!-- <section class="resume-section" id="skills">

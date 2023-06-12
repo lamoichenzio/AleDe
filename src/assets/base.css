@@ -1,10 +1,15 @@
 @charset "UTF-8";
 
 @import url('https://fonts.cdnfonts.com/css/gotham-rounded-ssm');
-@import url('https://fonts.cdnfonts.com/css/ts-kirt'); 
-@import url('https://fonts.cdnfonts.com/css/caribantu'); 
-@import url('https://fonts.cdnfonts.com/css/armetica'); 
-@import url('https://fonts.cdnfonts.com/css/meticula'); 
+@import url('https://fonts.cdnfonts.com/css/larsseit-font-family');
+@import url('https://fonts.cdnfonts.com/css/tt-corals-trial');
+@import url('https://fonts.cdnfonts.com/css/steamflix-montserrat');
+
+
+
+
+
+
 /*!
 * Start Bootstrap - Resume v7.0.6 (https://startbootstrap.com/theme/resume)
 * Copyright 2013-2023 Start Bootstrap
@@ -17,6 +22,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+  --font-family: "Steamflix Montserrat";
+  /*--font-family: "Larsseit";*/
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -83,7 +90,7 @@
   --bs-link-hover-color: var(--bs-secondary);
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
-  --font-family: "Gotham Rounded SSm"
+  /*--font-family: "Gotham Rounded SSm"*/
 }
 
 *,
@@ -133,7 +140,7 @@ h1, .h1 {
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 }
 
@@ -142,7 +149,7 @@ h2, .h2 {
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 3.0rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -151,7 +158,7 @@ h3, .h3 {
 }
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -160,12 +167,12 @@ h4, .h4 {
 }
 @media (min-width: 1200px) {
   h4, .h4 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
 h5, .h5 {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
 }
 
 h6, .h6 {
@@ -10863,7 +10870,7 @@ h1, .h1 {
 }
 
 p.lead {
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -10871,7 +10878,7 @@ p.lead {
   font-family: var(--font-family), sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 #sideNav {
@@ -10889,9 +10896,9 @@ p.lead {
 
 @media (min-width: 992px) {
   #sideNav {
-    padding-left: 0;
-    padding-right: 0;
-    text-align: center;
+    /*padding-left: 0;*/
+    /*padding-right: 0;*/
+    text-align: start;
     position: fixed;
     top: 0;
     left: 0;

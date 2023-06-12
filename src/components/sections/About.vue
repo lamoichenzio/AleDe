@@ -4,16 +4,14 @@
     <div class="resume-section-content">
 
       <div class="row pb-4">
+<!--        <div class="col-12"><img class="profile-pic" src="./src/assets/avatar.jpg" alt="..."/></div>-->
         <div class="col-12"><img class="profile-pic" v-bind:src="logo" alt="..."/></div>
       </div>
 
-      <h1 class="mb-0">{{ surname }}
+      <h1 class="mb-5">{{ surname }}
         <span class="text-primary">{{ name }}</span>
       </h1>
-      <div class="subheading mb-5">
-<!--        {{ address }} · {{ phone }} ·-->
-        <i class="fa-solid fa-envelope text-primary pr-2"></i><a class="link-primary" v-bind:href="mailToEmail">{{ email }}</a>
-      </div>
+
       <p class="lead mb-5">{{ description }}</p>
       <div class="social-icons">
         <a class="social-icon" v-bind:href="linkedin" v-show="linkedin"><i class="fab fa-linkedin-in"></i></a>
@@ -50,7 +48,7 @@ const mailToEmail = ref("mailto:")
 
 if (email.value) mailToEmail.value += email.value
 
-const logo = ref("https://placehold.co/200x200")
+const logo = ref("./src/assets/avatar.jpg")
 
 </script>
 
@@ -63,7 +61,7 @@ const logo = ref("https://placehold.co/200x200")
   -webkit-border-radius: 100%;
   width: 150px;
   height: 150px;
-   border: 5px solid var(--bs-primary);
+  border: 0 solid var(--bs-primary);
   overflow: hidden;
   margin: 0 auto;
   background: #fafafa;

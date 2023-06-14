@@ -17,7 +17,7 @@
         <a class="sidebar-email d-lg-none p-3" v-bind:href="mailToEmail"><i class="fa-solid fa-envelope pr-3"></i>{{ email }}</a>
       </ul>
     </div>
-    <a class="sidebar-email p-3  d-none d-lg-block" v-bind:href="mailToEmail"><i class="fa-solid fa-envelope pr-3"></i>{{ email }}</a>
+    <a class="sidebar-email px-4 py-3  d-none d-lg-block" v-bind:href="mailToEmail"><i class="fa-solid fa-envelope pr-3"></i>{{ email }}</a>
 
   </nav>
 

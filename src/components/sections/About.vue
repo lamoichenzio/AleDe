@@ -4,7 +4,7 @@
     <div class="resume-section-content">
 
       <div class="row mb-4">
-        <div class="col-12"><img class="profile-pic" v-bind:src="logo" alt="avatar"/></div>
+        <div class="col-12"><img class="profile-pic" v-bind:src="avatar" alt="avatar"/></div>
       </div>
 
       <h1 class="mb-4">{{ surname }}
@@ -27,6 +27,7 @@
 
 <script setup>
 import {ref} from "vue";
+import avatar from '@/assets/img/avatar.jpg'
 
 const name = ref('Alessandro')
 const surname = ref("D'Errico")
@@ -40,8 +41,6 @@ const github = ref("https://github.com/lamoichenzio")
 const facebook = ref("https://www.facebook.com/alessandro.derrico2")
 const twitter = ref("https://twitter.com/AlesDerrico")
 const description = ref("Hello! I'm Alessandro, a passionate developer that love mobile and web development. With a strong background in Computer Science, I have a good understanding of the most common technologies and frameworks used in the industry. I take great pride in crafting innovative and user-friendly solutions that seamlessly blend functionality with aesthetics. Whether it's creating intuitive mobile apps or building responsive web applications, I am dedicated to delivering high-quality results that exceed client expectations.")
-
-const logo = ref("./src/assets/avatar.jpg")
 
 </script>
 

@@ -13,11 +13,11 @@
 
       <p class="lead mb-4">{{ description }}</p>
       <div class="social-icons">
-        <a class="social-icon" v-bind:href="linkedin" v-show="linkedin"><i class="fab fa-linkedin-in"></i></a>
-        <a class="social-icon" v-bind:href="github" v-show="github"><i class="fab fa-github"></i></a>
-        <a class="social-icon" v-bind:href="twitter" v-show="twitter"><i class="fab fa-twitter"></i></a>
-        <a class="social-icon" v-bind:href="facebook" v-show="facebook"><i class="fab fa-facebook-f"></i></a>
-        <a class="social-icon" v-bind:href="instagram" v-show="instagram"><i class="fab fa-instagram"></i></a>
+        <a class="social-icon mt-2" v-bind:href="linkedin" v-show="linkedin"><i class="fab fa-linkedin-in"></i></a>
+        <a class="social-icon mt-2" v-bind:href="github" v-show="github"><i class="fab fa-github"></i></a>
+        <a class="social-icon mt-2" v-bind:href="twitter" v-show="twitter"><i class="fab fa-twitter"></i></a>
+        <a class="social-icon mt-2" v-bind:href="facebook" v-show="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a class="social-icon mt-2" v-bind:href="instagram" v-show="instagram"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
   </section>

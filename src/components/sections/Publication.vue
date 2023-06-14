@@ -10,7 +10,7 @@
           <div class="flex-grow-1">
             <h3 class="mb-0">{{ item.title }}</h3>
             <div class="subheading mb-3">{{ item.place }}</div>
-            <a class="link-primary" v-bind:href="item.link">{{ item.link }}</a>
+            <a class="link-primary wrap-link" v-bind:href="item.link">{{ item.link }}</a>
           </div>
           <div class="flex-shrink-0"><span class="text-primary">{{ item.year }}</span></div>
         </div>
@@ -43,4 +43,7 @@ publications.value.push({
 </script>
 
 <style>
+.wrap-link {
+  overflow-wrap: break-word;
+}
 </style>
